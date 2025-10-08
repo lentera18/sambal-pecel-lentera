@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="icon" href="images/favicon.png" type="image/png"> <!-- Menambahkan logo sebagai favicon -->
+ <title>Dashboard Pelanggan</title> <!-- Menambahkan judul halaman -->
+ <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+    body {
+      background-color: chocolate;
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .icon-box {
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: rotate 2s linear infinite;
+    }
+
+    .icon-box:hover {
+      background-color: #f0f0f0;
+    }
+
+    .icon-box i {
+      font-size: 100px;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+ </style>
+</head>
+<body>
+ <div class="icon-container">
+    <div class="icon-box" onclick="showAlert()">
+      <i class='bx bx-cog'></i>
+    </div>
+ </div>
+
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+ <script>
+    function showAlert() {
+      alert("Maaf, halaman website ini masih dalam tahap pengembangan :)");
+    }
+ </script>
+</body>
+</html>
